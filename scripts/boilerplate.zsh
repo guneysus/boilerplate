@@ -53,6 +53,7 @@ boilerplate () {
 
   # Download the file
   echo "Downloading $FILE_PATH from $REPO (branch: $BRANCH)..."
+  echo ${RAW_URL}
   curl -fsSL -o "$(basename "$FILE_PATH")" "$RAW_URL" && echo "Done: $(basename "$FILE_PATH")"
 }
 
